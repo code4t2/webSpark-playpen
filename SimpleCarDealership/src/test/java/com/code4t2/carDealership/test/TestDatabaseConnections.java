@@ -5,13 +5,12 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
 public class TestDatabaseConnections {
 
-	public static void main(String[] args) {
+	public List<TestUser> GetUsers() {
 		
 		/* Declare the objects */
 		
@@ -49,7 +48,7 @@ public class TestDatabaseConnections {
 			e.printStackTrace();
 		}
 		
-		
+		return Users;
 	}
 	
 }
